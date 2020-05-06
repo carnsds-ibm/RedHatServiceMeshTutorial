@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2ddb9345e2e646c038b6138acfc975f6",
+    "revision": "b77dde5f8f2b536b000d3702c7a5a706",
     "url": "/RedHatServiceMeshTutorial/index.html"
   },
   {
-    "revision": "4d7ab68c80fb9ba826b3",
+    "revision": "c40a001e77724a620952",
     "url": "/RedHatServiceMeshTutorial/static/css/main.e5ef9ae8.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/RedHatServiceMeshTutorial/static/js/2.78e3c2d3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4d7ab68c80fb9ba826b3",
-    "url": "/RedHatServiceMeshTutorial/static/js/main.4d9a42c0.chunk.js"
+    "revision": "c40a001e77724a620952",
+    "url": "/RedHatServiceMeshTutorial/static/js/main.92d477a0.chunk.js"
   },
   {
     "revision": "d417f8dc86465ef4ee50",
@@ -28,20 +28,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/RedHatServiceMeshTutorial/static/media/pg2-1.a99ed721.png"
   },
   {
-    "revision": "4e2f06f083e95eee9c3eda800eaab6da",
-    "url": "/RedHatServiceMeshTutorial/static/media/pg2-2.4e2f06f0.png"
+    "revision": "d3cb824b4961b351ae0220013ea6994d",
+    "url": "/RedHatServiceMeshTutorial/static/media/pg2-2.d3cb824b.png"
   },
   {
-    "revision": "0d76a85f4b4538db88785b5bfe3cc4e4",
-    "url": "/RedHatServiceMeshTutorial/static/media/pg2-3.0d76a85f.png"
+    "revision": "6d13191831986dcdcb1202aa5c2bf578",
+    "url": "/RedHatServiceMeshTutorial/static/media/pg2-3.6d131918.png"
   },
   {
-    "revision": "d7683f7bed1bb461f979ac43a5720eba",
-    "url": "/RedHatServiceMeshTutorial/static/media/pg2-4.d7683f7b.png"
+    "revision": "d30cb62e4ff340d3afa638bf79d64894",
+    "url": "/RedHatServiceMeshTutorial/static/media/pg2-4.d30cb62e.png"
   },
   {
-    "revision": "cd933aa09a4a0cd9ad7d0090ff9f3993",
-    "url": "/RedHatServiceMeshTutorial/static/media/pg2-5.cd933aa0.png"
+    "revision": "1a9a8ec304224021e8c1c7b2d7645ea8",
+    "url": "/RedHatServiceMeshTutorial/static/media/pg2-5.1a9a8ec3.png"
   },
   {
     "revision": "85bd4d079db782b62669fb2959f6764e",
