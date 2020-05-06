@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f02b5c06456d4110fda6ee58c8be13e5",
+    "revision": "2ddb9345e2e646c038b6138acfc975f6",
     "url": "/RedHatServiceMeshTutorial/index.html"
   },
   {

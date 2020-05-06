@@ -22,7 +22,7 @@ const HomePage = () => (
             <ListItem><a rel="noopener noreferrer" href={'https://docs.openshift.com/container-platform/3.6/cli_reference/get_started_cli.html'} target='_blank'>Link for CLI download if needed.</a></ListItem>
           </UnorderedList>
           <ListItem><BodyText SM B text='Openshift cluster (4.X preferred)' /></ListItem>
-          <ListItem><BodyText SM B text='Red Hat Service Mesh installed'/></ListItem>
+          <ListItem><BodyText SM B text='Red Hat (Maistra) Service Mesh installed'/></ListItem>
           <UnorderedList nested>
             <ListItem><a rel="noopener noreferrer" href={'https://docs.openshift.com/container-platform/4.3/service_mesh/service_mesh_install/preparing-ossm-installation.html'} target='_blank'>Link for installation guide if needed.</a></ListItem>
           </UnorderedList>

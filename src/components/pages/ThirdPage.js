@@ -68,10 +68,10 @@ oc apply -f configmap.yaml`} />
         </ListItem>
         <ListItem>
           <BodyText text="Istio Configuration - Virtual Services" />
-          <BodyText SM text={"Now that we have the application housekeeping out of the way, we can add some configuration for istio to route and analyze traffic to our application. First, we will setup our Virtual Services." 
-          + "Simply put, these act as the routing rules. Very similar to HAproxy configuration or other load balancer rules. " 
-          + "You also define the weights and possibly some other rules for canary testing. You can see I've put a 80/20 split on the frontend services (that we will deploy in next section) and a 90/10 on the backend."
-          + " I also specifed a virtual service that would make it so that all Firefox users would be directed to the v2 version of the frontend. Note: you can see in the selector istio key, we are using the default ingressgateway of the mesh."}/>
+          <BodyText SM text={`Now that we have the application housekeeping out of the way, we can add some configuration for istio to route and analyze traffic to our application. First, we will setup our Virtual Services. 
+          Simply put, these act as the routing rules. Very similar to HAproxy configuration or other load balancer rules. 
+          You also define the weights and possibly some other rules for canary testing. You can see I've put a 80/20 split on the frontend services (that we will deploy in next section) and a 90/10 on the backend. 
+          You can specify all sorts of rules in a virtual service, such as, making it so that all Firefox users or users from specific ips would be directed to the v2 version of the frontend. Note: you can see in the selector istio key, we are using the default ingressgateway of the mesh.`}/>
           <CodeSnip M text={
 `cat << EOF > istio_networking.yaml
 apiVersion: networking.istio.io/v1alpha3
@@ -184,8 +184,8 @@ oc apply -f istio_networking.yaml
         </ListItem>
         <ListItem>
           <BodyText text="Istio Configuration - Destination Rules" />
-          <BodyText SM text={"Next we will apply some destination rules for the routing, this is necessary for canary testing and further details how the communication " 
-            + "in the mesh works. For instance, adding mutual TLS on the services as seen in some of the rules." }/>
+          <BodyText SM text={`Next we will apply some destination rules for the routing, this is necessary for canary testing and further details how the communication " 
+            in the mesh works. For instance, adding mutual TLS on the services as seen in some of the rules.` }/>
           <CodeSnip M text={
 `cat << EOF > destination_rules.yaml
 apiVersion: networking.istio.io/v1alpha3
@@ -251,12 +251,12 @@ oc apply -f destination_rules.yaml
 `} />
         </ListItem>
         <ListItem>
-          <BodyText text="Istio Configuration - Adding Prometheus Metrics" />
-          <BodyText SM text={"We will leverage Prometheus to query for the number of requests to the frontend and backend services." 
-            + "You can then, visualize these as traffic is generated with Grafana or Kiali (which just shows the grafana data)."
-            + "Each service requires it's own metric (instance) resource as well as a rule. However, the rules can reference the same handler resource for prometheus " 
-            + "to handle the rule execution as depicted in the spec.actions.handler of the rule yaml below. "
-            + "Note: The metrics are applied to the application project, while the rule and prometheus resources are applied to the mesh project." } />
+          <BodyText text="Istio Configuration - Adding Metrics and a Prometheus Handler" />
+          <BodyText SM text={`We will leverage Prometheus to query for some basic request data on the frontend and backend services. 
+            You can then, visualize these as traffic is generated with Grafana or Kiali (which just shows data similar to grafana). 
+            Each service requires it's own metric (instance) resource as well as a rule. However, the rules can reference the same handler resource for prometheus 
+            to handle the rule execution as depicted in the spec.actions.handler of the rule yaml below. 
+            Note: The metrics are applied to the application project, while the rule and prometheus resources are applied to the mesh project.` } />
           <CodeSnip M text={
 `cat << EOF > metrics.yaml
 apiVersion: "config.istio.io/v1alpha2"
@@ -335,11 +335,11 @@ oc apply -f metrics.yaml`} />
         </ListItem>
         <ListItem>
           <BodyText text="Summary" />
-          <BodyText SM text={"Well done for making it this far! Istio is configured and ready for our application! " 
-            + "We first started with some housekeeping and adding some values to be used for our application, basic kubernetes stuff. "
-            + "Then we added a gateway and some virtual services in order to control traffic into our ingress gateway, much like that of a load balancer. " 
-            + "Next the configuration of destination rules were made in order to specify traffic subsets and policy with mutual tls, which allows for service to service authentication without having to really do much on our part, nifty! "
-            + "Finally, we laid the foundation of the prometheus derived metrics and rules for futre analysis of traffic into our application."} />
+          <BodyText SM text={`Well done for making it this far! Istio is configured and ready for our application! 
+            We first started with some housekeeping and adding some values to be used for our application, basic kubernetes stuff. 
+            Then we added a gateway and some virtual services in order to control traffic into our ingress gateway, much like that of a load balancer. 
+            Next the configuration of destination rules were made in order to specify traffic subsets and policy with mutual tls, which allows for service to service authentication without having to really do much on our part, nifty! 
+            Finally, we laid the foundation of the prometheus derived metrics and rules for futre analysis of traffic into our application.`} />
         </ListItem>
       </UnorderedList>
   </Content>

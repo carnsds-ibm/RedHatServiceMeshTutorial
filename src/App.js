@@ -56,15 +56,15 @@ class App extends React.Component {
           isChildOfHeader={false}
           aria-label="Side navigation"
         >
-          <SideNavLink onClick={() => this.changePage({page: 1})} renderIcon={Fade16}>Welcome</SideNavLink>
-          <SideNavLink onClick={() => this.changePage({page: 2})} renderIcon={Fade16}>Setup</SideNavLink>
-          <SideNavLink onClick={() => this.changePage({page: 3})} renderIcon={Fade16}>Configuration</SideNavLink>
-          <SideNavLink onClick={() => this.changePage({page: 4})} renderIcon={Fade16}>Installation</SideNavLink>
-          <SideNavLink onClick={() => this.changePage({page: 5})} renderIcon={Fade16}>Using Kiali</SideNavLink>
-          <SideNavLink onClick={() => this.changePage({page: 6})} renderIcon={Fade16}>Grafana</SideNavLink>
-          <SideNavLink onClick={() => this.changePage({page: 7})} renderIcon={Fade16}>Distributed Tracing</SideNavLink>
-          <SideNavLink onClick={() => this.changePage({page: 8})} renderIcon={Fade16}>Egress</SideNavLink>
-          <SideNavLink onClick={() => this.changePage({page: 9})} renderIcon={Fade16}>Contact</SideNavLink>
+          <SideNavLink style={this.state.view === 1 ? {backgroundColor: "rgb(0, 153, 255)" } : null } onClick={() => this.changePage({page: 1})} renderIcon={Fade16}>Welcome</SideNavLink>
+          <SideNavLink style={this.state.view === 2 ? {backgroundColor: "rgb(0, 153, 255)" } : null } onClick={() => this.changePage({page: 2})} renderIcon={Fade16}>Setup</SideNavLink>
+          <SideNavLink style={this.state.view === 3 ? {backgroundColor: "rgb(0, 153, 255)" } : null } onClick={() => this.changePage({page: 3})} renderIcon={Fade16}>Configuration</SideNavLink>
+          <SideNavLink style={this.state.view === 4 ? {backgroundColor: "rgb(0, 153, 255)" } : null } onClick={() => this.changePage({page: 4})} renderIcon={Fade16}>Installation</SideNavLink>
+          <SideNavLink style={this.state.view === 5 ? {backgroundColor: "rgb(0, 153, 255)" } : null } onClick={() => this.changePage({page: 5})} renderIcon={Fade16}>Using Kiali</SideNavLink>
+          <SideNavLink style={this.state.view === 6 ? {backgroundColor: "rgb(0, 153, 255)" } : null } onClick={() => this.changePage({page: 6})} renderIcon={Fade16}>Grafana</SideNavLink>
+          <SideNavLink style={this.state.view === 7 ? {backgroundColor: "rgb(0, 153, 255)" } : null } onClick={() => this.changePage({page: 7})} renderIcon={Fade16}>Distributed Tracing</SideNavLink>
+          <SideNavLink style={this.state.view === 8 ? {backgroundColor: "rgb(0, 153, 255)" } : null } onClick={() => this.changePage({page: 8})} renderIcon={Fade16}>Egress</SideNavLink>
+          <SideNavLink style={this.state.view === 9 ? {backgroundColor: "rgb(0, 153, 255)" } : null } onClick={() => this.changePage({page: 9})} renderIcon={Fade16}>Contact</SideNavLink>
 
         </SideNav>
         <PageSwitcher page={this.state.view} />

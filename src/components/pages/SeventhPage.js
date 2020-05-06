@@ -67,9 +67,13 @@ const SeventhPage = () => (
         </ListItem>
         <ListItem>
           <BodyText text="Summary" />
-          <BodyText SM text={`In this section we touched on the importance of Distributed Tracing. How to navigate to the Jaeger UI, which comes with any current installation of Red Hat Service Mesh. 
+          <BodyText SM text={`In this section we touched on the importance of Distributed Tracing. How to navigate to the Jaeger UI, which comes with any current installation of the Maistra Service Mesh. 
           Then some brief explanation in querying for the default traces included with the istio proxy envoys that are injected into our pods. We also mentioned the existence of OpenTracing APIs that 
-          can allow you to include custom traces in your code if the defaults don't include all the information desired. Then you could query for and view those in the Jaeger UI as well.`} />
+          can allow you to include custom traces in your code if the defaults don't include all the information desired. Then you could query for and view those in the Jaeger UI as well. 
+          Feel free to familiarize yourself or learn more about OpenTracing below:`} />
+          <UnorderedList nested>
+            <ListItem><a rel="noopener noreferrer" href={'https://opentracing.io/docs/getting-started/tutorials/'} target='_blank'>Link for OpenTracing tutorial.</a></ListItem>
+          </UnorderedList>
         </ListItem>
       </UnorderedList>
   </Content>

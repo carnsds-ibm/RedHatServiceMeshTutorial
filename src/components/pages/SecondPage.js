@@ -52,7 +52,7 @@ export APP_PROJ="$INITIALS-application"
           <Image path={IMG} text='Switching to istio-system proj.' />
         </ListItem>
         <ListItem>
-          <BodyText text={`Switch to the Administrator role and navigate to Installed Operators and click on the "Red Hat OpenShift Service Mesh" operator link.`}/>
+          <BodyText text={`Switch to the Administrator role and navigate to Installed Operators and click on the "Red Hat OpenShift Service Mesh" or "Maistra Service Mesh" (same thing) operator link.`}/>
           <Image path={IMG2} text='Selecting correct operator' />
         </ListItem>
         <ListItem>

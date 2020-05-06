@@ -6,9 +6,9 @@ import {
   HeaderGlobalBar,
 } from "carbon-components-react/es/components/UIShell";
 const AppHeader = () => (
-  <Header aria-label="Red Hat Service Mesh Tutorial">
-    <HeaderName href="/" prefix="IBM CPAT">
-      Red Hat Service Mesh Tutorial
+  <Header aria-label="Red Hat OpenShift Service Mesh Tutorial">
+    <HeaderName href="/" prefix="IBM">
+      Red Hat OpenShift - Maistra Service Mesh Tutorial
     </HeaderName>
     <HeaderGlobalBar />
   </Header>

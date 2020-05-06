@@ -54,17 +54,19 @@ const SixthPage = () => (
         </ListItem>
         <ListItem>
           <BodyText text="Looking at the Istio Workloads Dashboard" />
-          <Image path={IMG6} text="Image of Istio Workload Dashboard in Grafana" />
-          <BodyText SM text={`In this dashboard, we can see the telemetry of all that istio covers for us. In the image below you see a legend assigning 
-          different colors to some of the different services. You may view all sorts of different metrics that istio provides out of the box for these services by scrolling 
+          <BodyText SM text={`In this dashboard, we can see the telemetry of all that istio/the service mesh is covering for us. In the image below you see a legend assigning 
+          different colors to some of the different services, these colors are tracked in the graph to represent the metric data for the corresponding service. You'll have to scroll down 
+          a little yourself to get the full effect. You may view all sorts of different metrics that istio provides out of the box for these services by scrolling 
           down on the dashboard. This visualization representation of your metrics is the main cause for Grafana. You can potentially add custom metrics with Prometheus or otherwise
            and monitor them here as well, but that's a little out of scope for now. Maybe in the future that will be an added section.`} />
+          <Image path={IMG6} text="Image of Istio Workload Dashboard in Grafana" />
         </ListItem>
         <ListItem>
           <BodyText text="Summary" />
-          <BodyText SM text={`Grafana is a customizable dashboard tool for visualizing metrics of your application/workload and has a lot of cool features. 
+          <BodyText SM text={`Grafana is a customizable dashboard tool for visualizing metrics of your application/workload and has a lot of cool features. Lucky for us, the Service Mesh/Istio 
+          creates a few default dashboards for us so we can view a lot of useful metrics without having to know all the ins and outs of Grafana.
           It is definitely handy for checking when/where potentially erroneus network requests/responses are happening in your application. It's also 
-          built into Red Hat Service Mesh, so definitely good to be familiar with navigating at least. Feel free to learn more at the link below:`} />
+          built into the Service Mesh, so definitely good to be familiar with navigating at least. Feel free to learn more at the link below:`} />
           <UnorderedList nested>
             <ListItem><a rel="noopener noreferrer" href={'https://grafana.com/tutorials/'} target='_blank'>Link for Grafana tutorial.</a></ListItem>
           </UnorderedList>

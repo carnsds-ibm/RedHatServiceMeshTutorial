@@ -514,8 +514,8 @@ oc apply -f frontend_service.yaml`} />
           <Image path={IMG1} text="how to grab the right ingress route" />
           <BodyText SM text="Copy that text and navigate there in the browser, alternatively you can grab the route within the cluster in the mesh project." />
           <Image path={IMG2} text="Working App proof." />
-          <BodyText B SM text="If you see similar to the above and are able to create and account and mess around, then congratulate yourself, you've got it working properly!" />
-          <BodyText SM text="Also if you want to check and see if it's setup properly without going into the browser you can run the following command and just check that each running pod has 2 containers. This would indicate that the istio sidecar injection (envoy proxy) was successful." />
+          <BodyText B SM text="If you see similar to the above and are able to create an account and mess around, then congratulate yourself, you've got it working properly!" />
+          <BodyText SM text="Another thing to check and see if it's setup properlym run the following command and just check that each running pod has 2 containers. This would indicate that the istio sidecar injection (envoy proxy) was successful." />
           <CodeSnip text="oc get pods"/>
           <Image path={IMG3} text="Proof 2 of working application." />
         </ListItem>
