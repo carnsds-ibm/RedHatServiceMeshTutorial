@@ -64,7 +64,7 @@ class App extends React.Component {
           <SideNavLink style={this.state.view === 6 ? {backgroundColor: "rgb(0, 153, 255)" } : null } onClick={() => this.changePage({page: 6})} renderIcon={Fade16}>Grafana</SideNavLink>
           <SideNavLink style={this.state.view === 7 ? {backgroundColor: "rgb(0, 153, 255)" } : null } onClick={() => this.changePage({page: 7})} renderIcon={Fade16}>Distributed Tracing</SideNavLink>
           <SideNavLink style={this.state.view === 8 ? {backgroundColor: "rgb(0, 153, 255)" } : null } onClick={() => this.changePage({page: 8})} renderIcon={Fade16}>Egress</SideNavLink>
-          <SideNavLink style={this.state.view === 9 ? {backgroundColor: "rgb(0, 153, 255)" } : null } onClick={() => this.changePage({page: 9})} renderIcon={Fade16}>Contact</SideNavLink>
+          <SideNavLink style={this.state.view === 9 ? {backgroundColor: "rgb(0, 153, 255)" } : null } onClick={() => this.changePage({page: 9})} renderIcon={Fade16}>Cleanup & Contact</SideNavLink>
 
         </SideNav>
         <PageSwitcher page={this.state.view} />

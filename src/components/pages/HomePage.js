@@ -42,6 +42,8 @@ const HomePage = () => (
           <ListItem><BodyText B SM text='Grafana - Using Grafana to view metrics'/></ListItem>
           <ListItem><BodyText B SM text='Distributed Tracing - Using Jaeger to view Distributed Tracing'/></ListItem>
           <ListItem><BodyText B SM text='Egress - How to add external resource access if needed'/></ListItem>
+          <ListItem><BodyText B SM text='Cleanup & Contact - Deletion of projects and contact email' /></ListItem>
+
         </UnorderedList>
   </Content>
 );

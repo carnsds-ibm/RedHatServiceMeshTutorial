@@ -4,14 +4,20 @@ import { Content } from "carbon-components-react/lib/components/UIShell";
 import Header from "../header/BasicHeader";
 import { UnorderedList, ListItem } from "carbon-components-react";
 import BodyText from "../text/BodyText";
+import CodeSnip from "../util/CustomCodeSnip";
 
 const NinthPage = () => (
     <Content>
-        <Header text="Questions or Comments?"/>
-        <BodyText SM text="Thank you guys for checking out this ServiceMesh tutorial! If I can make any improvements or there are any questions, please reach out to my email below!"/>
+        <Header text="Cleanup & Contact"/>
         <UnorderedList>
             <ListItem>
+                <BodyText text="Cleanup" />
+                <BodyText SM text="Make sure MESH_PROJ and APP_PROJ are still set one last time, then run the following command to delete your projects and relieve your clusters a little bit." />
+                <CodeSnip text="oc delete project $MESH_PROJ $APP_PROJ" />
+            </ListItem>
+            <ListItem>
                 <BodyText text="Contact Email" />
+                <BodyText SM text="If I can make any improvements or there are any questions, please reach out to my email below!"/>
                 <BodyText SM text="Dillon.Carns@ibm.com" />
             </ListItem>
             <ListItem>
