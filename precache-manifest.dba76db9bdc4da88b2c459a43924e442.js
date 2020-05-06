@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b77dde5f8f2b536b000d3702c7a5a706",
+    "revision": "2241655e0c8211b9dbdfde439def454a",
     "url": "/RedHatServiceMeshTutorial/index.html"
   },
   {
-    "revision": "c40a001e77724a620952",
+    "revision": "0ae63c6c021c86920dd4",
     "url": "/RedHatServiceMeshTutorial/static/css/main.e5ef9ae8.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/RedHatServiceMeshTutorial/static/js/2.78e3c2d3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c40a001e77724a620952",
-    "url": "/RedHatServiceMeshTutorial/static/js/main.92d477a0.chunk.js"
+    "revision": "0ae63c6c021c86920dd4",
+    "url": "/RedHatServiceMeshTutorial/static/js/main.290f6be2.chunk.js"
   },
   {
     "revision": "d417f8dc86465ef4ee50",
