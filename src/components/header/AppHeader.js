@@ -7,7 +7,7 @@ import {
 } from "carbon-components-react/es/components/UIShell";
 const AppHeader = () => (
   <Header aria-label="Red Hat OpenShift Service Mesh Tutorial">
-    <HeaderName href="/" prefix="IBM">
+    <HeaderName href="/RedHatServiceMeshTutorial/" prefix="IBM">
       Red Hat OpenShift - Maistra Service Mesh Tutorial
     </HeaderName>
     <HeaderGlobalBar />
