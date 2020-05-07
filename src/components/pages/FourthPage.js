@@ -31,7 +31,7 @@ echo $MESH_PROJ`} />
           <BodyText text="Deploying the Database (MongoDB)" />
           <BodyText SM text={"We'll create and deploy the following file in order to standup the database in authentication mode. Also note the * sidecar.istio.io/inject: \"true\" * annotation in the pod, all the following deployments will have the"
             + " same annotation for istio injection, you can enable auto injection in the Service Mesh Control Plane, but we are doing it manually just because. This first deploy config is called mongo-deploy and all the subsequent deployments will have similar naming convention, also just because."
-            + " Note: we are using an empty dir for the DB, but feel free to change to a PVC if you want, this is obviously just a demo application though (same will apply to redis)."
+            + " Note: we are using an empty directory for the DB, but feel free to change to a PVC if you want, this is obviously just a demo application though (same will apply to redis)."
             + " Also notice the version label, this is import for distinguising where traffic goes from the destination rules."} />
           <CodeSnip M text={
 `cat << EOF > mongo_deploy_conf.yaml
@@ -122,8 +122,8 @@ oc apply -f mongo_service.yaml`} />
         </ListItem>
         <ListItem>
           <BodyText text="Deploying the Redis instance"/>
-          <BodyText SM text={"The following command to copy will create the redis deployment with the istio injection annotation as well."
-            + "We also use an empty dir here as well, but again, feel free to use a PVC."} />
+          <BodyText SM text={`The following command to copy will create the redis deployment with the istio injection annotation as well. 
+            We also use an empty directory here as well, but again, feel free to use a PVC.`} />
           <CodeSnip M text={
 `cat << EOF > redis_deploy_conf.yaml
 kind: DeploymentConfig
@@ -196,7 +196,7 @@ oc apply -f redis_service.yaml`} />
         <ListItem>
           <BodyText text="Deploying the Backend - Open Liberty"/>
           <BodyText SM text={`This deployment deploys the Java backend written with MicroProfile.
-            This leverages the configmap considerably and is responsible for the communication between redis, MongoDB and the frontend. However, we will have to make two deployments of this to exemplify canary testing.
+            This leverages the configmap considerably and is responsible for the communication between Redis, MongoDB and the frontend. However, we will have to make two deployments of this to exemplify canary testing.
             The first one will have the 'version: v1' label.`} />
           <CodeSnip M text={
 `cat << EOF > backend_deploy1.yaml
@@ -515,7 +515,7 @@ oc apply -f frontend_service.yaml`} />
           <BodyText SM text="Copy that text and navigate there in the browser, alternatively you can grab the route within the cluster in the mesh project." />
           <Image path={IMG2} text="Working App proof." />
           <BodyText B SM text="If you see similar to the above and are able to create an account and mess around, then congratulate yourself, you've got it working properly!" />
-          <BodyText SM text="Another thing to check and see if it's setup properlym run the following command and just check that each running pod has 2 containers. This would indicate that the istio sidecar injection (envoy proxy) was successful." />
+          <BodyText SM text="Another thing to check and see if it's setup properly, run the following command and just check that each running pod has 2 containers. This would indicate that the istio sidecar injection (envoy proxy) was successful." />
           <CodeSnip text="oc get pods"/>
           <Image path={IMG3} text="Proof 2 of working application." />
         </ListItem>
@@ -523,7 +523,7 @@ oc apply -f frontend_service.yaml`} />
           <BodyText text="Summary" />
           <BodyText SM text={`In this step, we've deployed our application and added istio injection annotations to each Pod in our DeploymentConfigs and Deployments and also added services to expose them internally in the cluster.
             Because of the virtual services we setup, our ingress gateway know's which envoy proxies (istio sidecars) on the pods to direct traffic to and we can officially start taking a look at that traffic data in the next section.
-            ** Note: There is a reason we used Deployments for one and DeploymentConfigs for the different services that we will run into later.` } />
+            ** Note: There is a reason we used Deployments for one and DeploymentConfigs for the different applications that we will run into later.` } />
         </ListItem>
       </UnorderedList>  
   </Content>

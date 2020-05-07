@@ -55,7 +55,7 @@ const SeventhPage = () => (
         <ListItem>
           <BodyText text="Looking at the trace details." />
           <BodyText SM text={`Something similar to below is what will appear after you've clicked the 'Find Traces' button. 
-          Note, I had to set my lookback to 3 hours to get results, so adjust accordingly. You're presented with 20 traces depicted on 
+          Note, I had to set my lookback to 3 hours to get results, so adjust accordingly. You're presented with traces depicted on 
           a graph for duration vs time of occurence as well as a list of up to however many traces you specified in the 'Limit Results' field. You can click 
           on one in the list or one on the graph to get more information about the trace. Go ahead and click on one to dig into the details a little deeper.`} />
           <Image path={IMG5} text="Selecting trace in Jaeger" />

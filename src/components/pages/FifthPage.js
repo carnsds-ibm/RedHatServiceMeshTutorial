@@ -34,7 +34,7 @@ const FifthPage = () => (
           <BodyText SM B text="** Please make sure your env variables for MESH_PROJ and APP_PROJ are still set as always! **" />
           <BodyText SM text={`Kiali provides a console that sort of centralizes all the information from istio and your service mesh configuration.
             It will allow us to look at the metrics as well as integrations for Grafana and Jaeger. However, our application probably doesn't have a whole lot of traffic generated right now, so let's go ahead and do that.
-            Now, you could go and ahead and refresh the web page from the last section and log in and and out a bunch, or you could just run the command below. The choice is yours.
+            Now, you could go ahead and refresh the web page from the last section and log in and out many times, or you could just run the command below. The choice is yours.
             If you run the script, just hit 'ctrl + c' whenever you want to end it or wait about 2-3 minutes to complete, you can also just move on while it runs.`} />
           <BodyText SM B text="** Note: You'll require wget and jq for the command to run properly. **" />
           <CodeSnip M text={
@@ -82,7 +82,7 @@ sh traffic.sh`} />
           be a fun challenge if you'd like to. Then the frontend technically is fully configured, but because of the DestinationRules not recognizing the DeploymentConfig properly as discussed earlier, it thinks it isn't properly configured. 
           Now we'll dig a little deeper into the backend-deploy application, so go ahead and click on the backend-deploy name when ready. Note you may have to change the time to the last hour or so if you're not seeing anything, I have mine set on the last 3hrs.`} />
           <Image path={IMG10} text="Backend Application overview in Kiali." />
-          <BodyText SM text={`In the application overview view, we get a brief summary on the right of the health of the traffic and also the workloads and services associated with the application. 
+          <BodyText SM text={`In the application overview view, we get a brief summary on the right of the traffic health and also the workloads and services associated with the backend application. 
           Let's switch tabs over to traffic to take a slightly more in depth view of the traffic associated with the application.`} />
           <Image path={IMG11} text="Traffic overview of Backend Application in Kiali." />
           <BodyText SM text={`Now in the traffic tab of our backend application, as seen above, you can see the amount of traffic, success rate, and type of the requests. In this case we had a mix of HTTP and vanilla TCP traffic with a 100% success rate, 
@@ -99,9 +99,9 @@ sh traffic.sh`} />
           <BodyText text="Workloads" />
           <Image path={IMG14} text="Workloads in Kiali" />
           <BodyText SM text={`The workloads section shows the applications that are actually handling the business logic of the requests. Let's 
-          go ahead and click on the first one, backend-deploy and take a slightly closer look again.`} />
+          go ahead and click on the first one, backend-deploy and take a closer look again.`} />
           <Image path={IMG15} text="Backend Workload overview in Kiali" />
-          <BodyText SM text={`So inside of the workload for backend-deploy, we can see that it's very similar to the application overview. There are tabs for traffic and metrics and logs. They all give pretty much the same details, except for only this one workload instance of the application. 
+          <BodyText SM text={`So inside of the workload for backend-deploy, we can see that it's very similar to the application overview. There are tabs for traffic, metrics, and logs - oh my! They all give pretty much the same details, except for only this one workload instance of the application. 
           Now, we'll just take a look at the logs tab since that's more unique and you may play with the other tabs at your leisure.`} />
           <Image path={IMG16} text="Backend Workload logs example" />
           <BodyText SM text={`As you can see, in the logs tab you can choose which pod of that deployment or workload to view. So if you had it scaled up to three or so, you could choose whichever pod's and the container of the pod in which to view said logs. Then, you know, view those logs.`} />

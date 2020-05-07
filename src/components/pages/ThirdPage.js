@@ -16,7 +16,7 @@ const ThirdPage = () => (
       <UnorderedList>
         <ListItem>
           <BodyText text='First, let us ensure that the setup went swimmingly.' />
-          <BodyText SM text='Navigate to in developer mode to your <initials>-istio-system project and checkout the topology. If you see similar to the image below, you are good to go! Otherwise, repeat setup.' />
+          <BodyText SM text='Navigate, in developer mode, to your <initials>-istio-system project and checkout the topology. If you see similar to the image below, you are good to go! Otherwise, repeat setup.' />
           <Image path={IMG1} text='Service Mesh completed setup' />
           <BodyText B SM text={`** Please ensure the $APP_PROJ and $MESH_PROJ environment variables are still set before proceeding! **`} />
           <CodeSnip M text={
@@ -184,7 +184,7 @@ oc apply -f istio_networking.yaml
         </ListItem>
         <ListItem>
           <BodyText text="Istio Configuration - Destination Rules" />
-          <BodyText SM text={`Next we will apply some destination rules for the routing, this is necessary for canary testing and further details how the communication " 
+          <BodyText SM text={`Next we will apply some destination rules for the routing, this is necessary for the canary testing to function and further details how the communication 
             in the mesh works. For instance, adding mutual TLS on the services as seen in some of the rules.` }/>
           <CodeSnip M text={
 `cat << EOF > destination_rules.yaml
@@ -338,8 +338,8 @@ oc apply -f metrics.yaml`} />
           <BodyText SM text={`Well done for making it this far! Istio is configured and ready for our application! 
             We first started with some housekeeping and adding some values to be used for our application, basic kubernetes stuff. 
             Then we added a gateway and some virtual services in order to control traffic into our ingress gateway, much like that of a load balancer. 
-            Next the configuration of destination rules were made in order to specify traffic subsets and policy with mutual tls, which allows for service to service authentication without having to really do much on our part, nifty! 
-            Finally, we laid the foundation of the prometheus derived metrics and rules for futre analysis of traffic into our application.`} />
+            Next the configuration of destination rules were made in order to specify traffic subsets and policy with mutual TLS, which allows for service to service authentication without having to really do much on our part, nifty! 
+            Finally, we laid the foundation of the Prometheus derived metrics and rules for future analysis of traffic into our application.`} />
         </ListItem>
       </UnorderedList>
   </Content>
