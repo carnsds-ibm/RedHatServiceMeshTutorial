@@ -118,7 +118,7 @@ sh traffic.sh`} />
         <ListItem>
           <BodyText text="Istio Config" />
           <Image path={IMG19} text="Istio Config Overview" />
-          <BodyText SM text={`The istio config overview tab just gives you a nice location for all you istio related files that you've applied. You can view the yaml and also see if any aren't properly configured. For instance, 
+          <BodyText SM text={`The istio config overview tab just gives you a nice location for all your istio related files that you've applied. You can view the yaml and also see if any aren't properly configured. For instance, 
           the frontend-service DestinationRule seems to be acting up for the reason discussed previously. Everything else seems to be in order though, feel free to peer around the yamls with the resources presented if you want before continuing.`} />
         </ListItem>
         <ListItem>
@@ -126,7 +126,7 @@ sh traffic.sh`} />
           <BodyText SM text={`In this section, we've looked at all the views that the Kiali console provides and gave a brief insight into all the resources 
           it covers. However, we did not click the distributed tracing link as that will just take you to the Jaeger UI that we'll touch on later. Overall though, Kiali 
           provides a really nice centralized location for a lot of traffic data for our application. We can look at metrics for services and deployments, view the traffic in 
-          a nice graph for our application, and view logs for specific pods and containers.`} />
+          a nice graph for our application, and view logs for specific workload pods and containers.`} />
         </ListItem>
       </UnorderedList>
   </Content>
