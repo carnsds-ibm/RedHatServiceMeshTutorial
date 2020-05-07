@@ -37,6 +37,9 @@ const FifthPage = () => (
             Now, you could go ahead and refresh the web page from the last section and log in and out many times, or you could just run the command below. The choice is yours.
             If you run the script, just hit 'ctrl + c' whenever you want to end it or wait about 2-3 minutes to complete, you can also just move on while it runs.`} />
           <BodyText SM B text="** Note: You'll require wget and jq for the command to run properly. **" />
+          <UnorderedList nested>
+            <ListItem><a rel="noopener noreferrer" href={'https://stedolan.github.io/jq/download/'} target='_blank'>(Optional) jq installation instructions.</a></ListItem>
+          </UnorderedList>
           <CodeSnip M text={
 `export GATEWAY="$(oc get route -n $MESH_PROJ istio-ingressgateway -o jsonpath='{.spec.host}')"
 wget https://raw.githubusercontent.com/carnsds-ibm/backend-openliberty-demo/master/traffic.sh
