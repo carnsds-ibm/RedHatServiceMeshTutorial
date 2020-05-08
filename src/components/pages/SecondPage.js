@@ -57,7 +57,7 @@ export APP_PROJ="$INITIALS-application"
           <Image path={IMG2} text='Selecting correct operator' />
         </ListItem>
         <ListItem>
-          <BodyText text={`Once on the operator page, click the create instance link on the "Istio Service Mesh Control Plane" card. Either Use the defaults or feel free to change the name, then click create when ready.`}/>
+          <BodyText text={`Once on the operator page, click the create instance link on the "Istio Service Mesh Control Plane" card.`}/>
           <Image path={IMG3} text='Creation link control plane' />
         </ListItem>
         <ListItem>
