@@ -53,6 +53,7 @@ export APP_PROJ="$INITIALS-application"
         </ListItem>
         <ListItem>
           <BodyText text={`Switch to the Administrator role and navigate to Installed Operators and click on the "Red Hat OpenShift Service Mesh" or "Maistra Service Mesh" (same thing) operator link.`}/>
+          <BodyText SM B text={`** Please note, it takes a minute or 2 to populate the operators in a new project sometimes **`} />
           <Image path={IMG2} text='Selecting correct operator' />
         </ListItem>
         <ListItem>
