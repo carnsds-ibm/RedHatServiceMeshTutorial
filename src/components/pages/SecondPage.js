@@ -27,7 +27,7 @@ const SecondPage = () => {
           <BodyText B text='We must then create a couple projects on our cluster.'/>
         </ListItem>
         <ListItem>
-          <BodyText text="Let's export our initials just so we ensure unique names throughout our projects. Run the following in your terminal or add an environment variable another way." />
+          <BodyText text="Let's export our initials in lowercase (uppercase won't work) just so we ensure unique names throughout our projects. Run the following in your terminal or add an environment variable another way." />
           <CodeSnip text='export INITIALS="<Enter your initials>"'/>
           <br/>
           <BodyText text="Echo your INITIALS to ensure it's working."/>

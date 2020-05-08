@@ -17,6 +17,7 @@ const ThirdPage = () => (
         <ListItem>
           <BodyText text='First, let us ensure that the setup went swimmingly.' />
           <BodyText SM text='Navigate, in developer mode, to your <initials>-istio-system project and checkout the topology. If you see similar to the image below, you are good to go! Otherwise, repeat setup.' />
+          <BodyText SM B text="** Please make sure all the pods in your <initials>-istio-system are completely up before continuing **" />
           <Image path={IMG1} text='Service Mesh completed setup' />
           <BodyText B SM text={`** Please ensure the $APP_PROJ and $MESH_PROJ environment variables are still set before proceeding! **`} />
           <CodeSnip M text={
